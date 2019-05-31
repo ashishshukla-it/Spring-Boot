@@ -11,10 +11,11 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class homeController {
 	@RequestMapping("home")
-	public ModelAndView home(@RequestParam("name") String myName)
+	public ModelAndView home(Alien alien)
 	{
+			System.out.println("^^^ Home controller called");
 			ModelAndView mv=new ModelAndView();
-			mv.addObject("name",myName);
+			mv.addObject("obj",alien);
 			mv.setViewName("home");
 			return mv;
 	}

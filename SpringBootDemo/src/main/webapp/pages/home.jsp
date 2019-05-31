@@ -7,6 +7,6 @@
 <title>My spring boot app</title>
 </head>
 <body>
-	hey ${name}, it's GROVE STREET 
+	hey ${obj.aname}, your id is ${obj.aid} and your favorite language is ${obj.lang}  
 </body>
 </html>
