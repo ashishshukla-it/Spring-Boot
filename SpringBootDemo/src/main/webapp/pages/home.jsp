@@ -7,6 +7,6 @@
 <title>My spring boot app</title>
 </head>
 <body>
-	GROVE STREET HOME
+	hey ${name}, it's GROVE STREET 
 </body>
 </html>
