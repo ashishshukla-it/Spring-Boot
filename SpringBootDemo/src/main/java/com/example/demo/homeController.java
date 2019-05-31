@@ -9,10 +9,10 @@ public class homeController {
 	public String home()
 	{
 		System.out.println("^^^ Home controller called");
-		return "home.jsp";
+		return "home";
 	}
 
 }
 
-// We have to add jasper maven dependency in pom.xml. This is because jsp is an old technology and spring 
-// boot by default does not support it.
+// Here we have removed .jsp from home and moved home.jsp into 'pages' folder inside webapp. So we have to make concerned changes in 
+// application.properties. There will be no change in the url.
